@@ -134,7 +134,7 @@ object GaussCluster {
     val sc = new SparkContext(conf)
     sc.setLogLevel("ERROR")
 
-    val oriData = sc.textFile("C:\\Users\\dell\\Desktop\  \data\\gaussCluster.txt")
+    val oriData = sc.textFile("C:\\Users\\dell\\Desktop\\data\\gaussCluster.txt")
     val data = oriData.map(_.split(" ")).map(s => s.map(_.toDouble)).map(s => {
       DenseVector(s(1),s(2))
     })

@@ -2,56 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f6dca49-4028-4e3d-bc69-3c1ac0222873" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../FirstScala/src/main/java/IsoForest/Tst.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstScala/src/main/java/IsoForest/UseScala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstScala/src/main/java/IsoForest/iForest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstScala/src/main/java/IsoForest/iForestImtate.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstScala/src/main/java/MLib/MultiClassifier.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstScala/src/main/java/com/sandalen/streaming/Streaming.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KG/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KG/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KG/src/main/java/FirstJena.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KG/src/main/java/HMM/Baum_Welch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KG/src/main/java/JenaTDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KG/src/main/java/RDF/FirstSparql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KG/src/main/java/RDF/GeneratorOfRdf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_hankcs_hanlp_portable_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DynamicPlanning/Dp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DynamicPlanning/ShortestPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DynamicPlanning/SolutionBag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HanLpTest/CWSEvaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HanLpTest/FirstHanLpDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HanLpTest/HanLpCut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HanLpTest/StopWordTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HanLpTest/chapter3/NGram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HanLpTest/collection/ArrayTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HanLpTest/collection/BaseNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HanLpTest/collection/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HanLpTest/data/CoreNatureDictionary.mini.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JavaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OtherTst/Tst1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OthersSvm/OptStruct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OthersSvm/SelectRs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OthersSvm/svm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SVM/EijStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SVM/SVM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SVM/SVMByKKT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tool/Bag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hanlp.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/BayesClassifer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Egreedy.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Softmax.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springdubbo/provider/src/main/java/com/sandalen/ticket/service/TicketServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GradientDescent/GradientDescentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GradientDescent/Tst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/AdaBoostingBySelf.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/AdaBoostingBySelf2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Binarizer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/CrossValidatorTst.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/FeatureEngineer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/GaussCluster.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Graph_test.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/LogisticBySelf.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/MultiClassifier.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/PCA.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/SomeTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Stump.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/TransFormTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Word2Vec.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/statistics/StatisticsTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DMPProgrameer" beforeDir="false" afterPath="$PROJECT_DIR$/../DMPProgrameer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark-test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FeatureEngineer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FeatureEngineer.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/GaussCluster.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/GaussCluster.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/SomeTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/SomeTest.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SVM/SVM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5225">
-              <caret line="344" lean-forward="true" selection-start-line="344" selection-end-line="344" />
+            <state relative-caret-position="6479">
+              <caret line="344" selection-start-line="344" selection-end-line="344" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,12 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SVM/SVMByKKT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1016">
-              <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
-              <folding>
-                <element signature="e#6130#6139#0" expanded="true" />
-                <element signature="e#6949#6958#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-190">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -105,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/SVM/EijStorage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
               <folding>
                 <element signature="e#110#111#0" expanded="true" />
                 <element signature="e#138#139#0" expanded="true" />
@@ -231,6 +196,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -255,14 +221,6 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="spark-test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="spark-test" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="OthersSvm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="spark-test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -299,14 +257,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575363475565" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575364257264" />
     <property name="last_opened_file_path" value="D:/Algorithm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -432,18 +389,34 @@
       <workItem from="1572505076246" duration="67000" />
       <workItem from="1575098638471" duration="6539000" />
       <workItem from="1575248137430" duration="21409000" />
-      <workItem from="1575333497744" duration="21701000" />
+      <workItem from="1575333497744" duration="21857000" />
+      <workItem from="1575420313681" duration="1207000" />
     </task>
+    <task id="LOCAL-00001" summary="ADD SVM">
+      <created>1575364211772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575364211772</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ADD SVM">
+      <created>1575364268411</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575364268411</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80804000" />
+    <option name="totallyTimeSpent" value="82167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18900804" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19168901" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -452,7 +425,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17280453" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17280453" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40084985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -479,6 +452,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ADD SVM" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD SVM" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -839,23 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SVM/EijStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-          <folding>
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/OthersSvm/svm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1090">
@@ -885,22 +845,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SVM/SVM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5225">
-          <caret line="344" lean-forward="true" selection-start-line="344" selection-end-line="344" />
+        <state relative-caret-position="6479">
+          <caret line="344" selection-start-line="344" selection-end-line="344" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SVM/EijStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SVM/SVMByKKT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1016">
-          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
-          <folding>
-            <element signature="e#6130#6139#0" expanded="true" />
-            <element signature="e#6949#6958#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-190">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>

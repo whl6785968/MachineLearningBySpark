@@ -31,5 +31,6 @@ public class Tst1 {
 //        powTest();
         tstDoubleArray();
         denseMatrixTst();
+        Tst1 tst1 = new Tst1();
     }
 }

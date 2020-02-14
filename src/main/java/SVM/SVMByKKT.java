@@ -29,13 +29,13 @@ public class SVMByKKT {
         xs = new ArrayList<double[][]>();
         ys = new ArrayList<Double>();
         while ((line = bufferedReader.readLine())!= null){
-            String[] strings = line.split(" ");
-            double x[][] = new double[2][1];
-            for(int i = 0; i < 2; i++){
-                x[i][0] = Double.parseDouble(strings[i+1]);
+            String[] strings = line.split(",");
+            double x[][] = new double[5][1];
+            for(int i = 0; i < 5; i++){
+                x[i][0] = Double.parseDouble(strings[i]);
             }
             xs.add(x);
-            ys.add(Double.parseDouble(strings[3]));
+            ys.add(Double.parseDouble(strings[5]));
         }
 
     }
@@ -49,7 +49,7 @@ public class SVMByKKT {
             a[i] = 0;
         }
 
-        cache = new DenseMatrix64F(a.length,1);
+        cache = new DenseMatrix64F(a.length,2);
         cache.zero();
 
         b = 0;
@@ -58,7 +58,7 @@ public class SVMByKKT {
     public double calcgx(double[][] x){
         double result = 0;
         for(int i=0;i<xs.size();i++){
-            double kernel = linearKernel(xs.get(i),x);
+            double kernel = rbfKernel(xs.get(i),x);
             result += a[i] * ys.get(i) * kernel;
         }
 
@@ -87,9 +87,20 @@ public class SVMByKKT {
 
     public double rbfKernel(double[][] x1,double[][] x2){
         double[][] sub = subForVec(x1, x2);
-        double expo = -(vector2Norm(sub)/2*Math.pow(getStd(sub),2));
+        double gamma = 0.2;
+        double expo = -(gamma * vector2Norm(sub)/2*Math.pow(getStd(sub),2));
         double exp = Math.exp(expo);
         return exp;
+    }
+
+    public double rbfKernel2(double[][] x1,double[][] x2){
+        double[][] sub = subForVec(x1, x2);
+        double norm2 = vector2Norm(sub);
+        double gamma = 0.2;
+
+        double result = Math.exp(gamma * Math.pow(norm2,2));
+
+        return result;
     }
 
     public double[][] getW(){
@@ -105,13 +116,15 @@ public class SVMByKKT {
         return w;
     }
 
-    public EijStorage selectSecondVariable(int index){
-        double max = 0;
-        int j = 0;
+    public EijStorage selectSecondVariable(int index,double Ei){
+        int maxK = -1;
+        double maxDeltaE = 0;
         double Ej = 0;
-        double e1 = calcE(index);
+
         //cache里面存储的是已经被优化的乘子
         cache.set(index,0,1);
+        cache.set(index,1,Ei);
+
         List<Integer> validList = nonzero(cache, 0);
         //存储Ej和j
         EijStorage eijStorage = new EijStorage();
@@ -122,21 +135,22 @@ public class SVMByKKT {
                 if(validList.get(i) == index){
                     continue;
                 }
-                double e2 = calcE(validList.get(i));
-                if(Math.abs(e1 - e2) > max){
-                    max = Math.abs(e1 - e2);
-                    j = validList.get(i);
-                    Ej = e2;
+                double Ek = calcE(validList.get(i));
+                double delataE = Math.abs(Ei - Ek);
+                if(delataE >= maxDeltaE){
+                    maxDeltaE = delataE;
+                    maxK = validList.get(i);
+                    Ej = Ek;
                 }
             }
 
-            eijStorage.setE(Ej);
-            eijStorage.setIndex(j);
+            eijStorage.setEj(Ej);
+            eijStorage.setJ(maxK);
         }
         else {
-            j = selectRandmJ(index);
-            eijStorage.setIndex(j);
-            eijStorage.setE(calcE(j));
+
+            eijStorage.setJ(selectRandmJ(index));
+            eijStorage.setEj(calcE(eijStorage.getJ()));
         }
 
 
@@ -179,21 +193,49 @@ public class SVMByKKT {
         return  tmp/length;
     }
 
+    public void setAppropriateEj(double Ei,int j){
+        if(Ei >= 0){
+            double min = 0;
+            for(int i = 0; i < cache.numRows;i++){
+                if(cache.get(i,1) < min){
+                    min = cache.get(i,1);
+                }
+            }
+
+            cache.set(j,1,min);
+        }
+        else {
+            double max = 0;
+            for(int i = 0; i < cache.numRows;i++){
+                if(cache.get(i,1) > max){
+                    max = cache.get(i,1);
+                }
+            }
+
+            cache.set(j,1,max);
+        }
+    }
+
+    public void updateCache(int j){
+        cache.set(j,0,1);
+        cache.set(j,1,calcE(j));
+    }
+
     public int inner(int i){
         double Ei = calcE(i);
+//        System.out.println("Ei is " + Ei);
         if (((ys.get(i) * Ei < -0.001) && (a[i] < C)) || ((ys.get(i) * Ei > 0.001) && (a[i] > 0))) {
-            EijStorage eijStorage = selectSecondVariable(i);
-            int j = eijStorage.getIndex();
-            double Ej = eijStorage.getE();
-
+            EijStorage eijStorage = selectSecondVariable(i,Ei);
+            int j = eijStorage.getJ();
+            double Ej = eijStorage.getEj();
 
             double old_a1 = a[i];
-            double old_a2 = a[j];
+            double old_a2 = a[eijStorage.getJ()];
 
             double L;
             double H;
 
-            if(ys.get(i) != ys.get(j)){
+            if(ys.get(i) != ys.get(eijStorage.getJ())){
                 L = Math.max(0,old_a2-old_a1);
                 H = Math.min(C,C+old_a2 - old_a1);
             }
@@ -206,14 +248,14 @@ public class SVMByKKT {
                 return 0;
             }
 
-            double eta = linearKernel(xs.get(i),xs.get(i)) + linearKernel(xs.get(j),xs.get(j)) - 2*linearKernel(xs.get(i),xs.get(j));
-            if(eta < 0){
+            double eta =  2*rbfKernel(xs.get(i),xs.get(eijStorage.getJ())) - rbfKernel(xs.get(i),xs.get(i)) - rbfKernel(xs.get(eijStorage.getJ()),xs.get(eijStorage.getJ()));
+            if(eta >= 0){
                 return 0;
             }
 
-            double unc_a2 = old_a2 + (ys.get(j) * (Ei - Ej)) / eta;
-
             double new_a2;
+//            double unc_a2 = old_a2 + (ys.get(eijStorage.getJ()) * (Ei - eijStorage.getEj())) / eta;
+            double unc_a2 = -(old_a2 + (ys.get(j) * (Ei - Ej))) / eta;
             if(unc_a2 > H){
                 new_a2 = H;
             }
@@ -225,27 +267,40 @@ public class SVMByKKT {
                 new_a2 = unc_a2;
             }
 
-            double new_a1 = old_a1 + ys.get(i) * ys.get(j) * (old_a2 - new_a2);
+            a[eijStorage.getJ()] = new_a2;
+            updateCache(j);
+
 
             if(Math.abs(new_a2 - old_a2) < 0.00001){
                 return 0;
             }
 
+            double new_a1 = old_a1 + ys.get(i) * ys.get(eijStorage.getJ()) * (old_a2 - new_a2);
             a[i] = new_a1;
-            a[j] = new_a2;
+//            double new_Ei = calcE(i);
+//            setAppropriateEj(Ei,eijStorage.getJ());
+            updateCache(i);
+            double new_b1 = b - Ei - ys.get(i) * rbfKernel(xs.get(i),xs.get(i)) * (new_a1 - old_a1) -
+                    ys.get(j) * rbfKernel(xs.get(i),xs.get(j)) * (new_a2 - old_a2);
 
-            double new_b1 = -Ei - ys.get(i) * linearKernel(xs.get(i),xs.get(i)) * (new_a1 - old_a1) -
-                    ys.get(j) * linearKernel(xs.get(j),xs.get(j)) * (new_a2 - old_a2) + b;
+//            double new_b2 = -eijStorage.getEj() - ys.get(i) * linearKernel(xs.get(i),xs.get(eijStorage.getJ())) * (new_a1 - old_a1) -
+//                    ys.get(eijStorage.getJ()) * linearKernel(xs.get(eijStorage.getJ()),xs.get(eijStorage.getJ())) * (new_a2 - old_a2) + b;
 
-            double new_b2 = -Ej - ys.get(i) * linearKernel(xs.get(i),xs.get(j)) * (new_a1 - old_a1) -
-                    ys.get(j) * linearKernel(xs.get(j),xs.get(j)) * (new_a2 - old_a2) + b;
+            double new_b2 = b - Ej - ys.get(i) * rbfKernel(xs.get(i),xs.get(j)) * (new_a1 - old_a1) -
+                    ys.get(j) * rbfKernel(xs.get(j),xs.get(j)) * (new_a2 - old_a2);
 
-            if((a[i] > 0 && a[i] < C) && (a[j] > 0 && a[j] < C)){
+            if(a[i] > 0 && a[i] < C){
                 b = new_b1;
+            }
+            else if(a[eijStorage.getJ()] > 0 && a[eijStorage.getJ()] < C){
+                b = new_b2;
             }
             else {
                 b = (new_b1 + new_b2) / 2.0;
             }
+
+            double new_Ei = calcE(i);
+            cache.set(i,1,new_Ei);
 
             return 1;
         }
@@ -257,7 +312,7 @@ public class SVMByKKT {
 
     public void train(){
         int iter = 0;
-        int maxIt = 40;
+        int maxIt = 1000;
         int pair_changed = 0;
         boolean entireSet = true;
         //外循环停机条件
@@ -318,14 +373,19 @@ public class SVMByKKT {
         return list;
     }
 
-    public void predict(double[][] x){
+    public double predict(double[][] x){
         double[][] w = getW();
+//        for(double[] d : w){
+//            for (double d1 : d){
+//                System.out.println(d1);
+//            }
+//        }
         double result = matrixMul(transpose(w),x)[0][0] + b;
-        if(result > 0){
-            System.out.println(1);
+        if(result >= 0){
+            return 1.0;
         }
         else {
-            System.out.println(-1);
+            return -1.0;
         }
     }
 
@@ -398,36 +458,57 @@ public class SVMByKKT {
         return result;
     }
 
-    public static void main(String[] args) throws IOException {
-//        String filepath = "C:\\Users\\dell\\Desktop\\date.txt";
-        String filepath = "C:\\Users\\dell\\Desktop\\data\\waterMelon2.0.txt";
-//        String filepath = "D:\\Algorithm\\testSet.txt";
-        SVMByKKT svmByKKT = new SVMByKKT(filepath);
-        svmByKKT.train();
-        double[][] w = svmByKKT.getW();
-        for(double[] d : w){
-            for (double d1 : d){
-                System.out.println(d1);
-            }
-        }
-
+    public double prf(String filepath) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new FileReader(filepath));
         String line = null;
-        List<double[][]> xs = new ArrayList();
+        List<double[][]> testData = new ArrayList();
+        List<Double> testLabel = new ArrayList<Double>();
+
         while ((line = bufferedReader.readLine()) != null){
-            String[] s = line.split(" ");
-            double x[][] = new double[2][1];
-            for(int i = 0; i < 2; i++){
-                x[i][0] = Double.parseDouble(s[i]);
+            String[] s = line.split(",");
+            double xi[][] = new double[5][1];
+            for(int i = 0; i < 5; i++){
+                xi[i][0] = Double.parseDouble(s[i]);
             }
-            xs.add(x);
+            testData.add(xi);
+
+            testLabel.add(Double.parseDouble(s[5]));
         }
 
-        for (int i = 0;i<xs.size();i++){
-            svmByKKT.predict(xs.get(i));
+
+
+        double count = 0;
+
+       for (int i = 0;i < testData.size();i++){
+
+           double prediction = predict(testData.get(i));
+           double label = testLabel.get(i);
+           if(prediction == label){
+               count += 1;
+           }
+       }
+
+        return count/testData.size();
+    }
+
+    public static void main(String[] args) throws IOException {
+//        String filepath = "C:\\Users\\dell\\Desktop\\date.txt";
+        int count = 0;
+        long start = System.currentTimeMillis();
+        while (count < 20){
+            String filepath = "C:\\Users\\dell\\Desktop\\waterData\\trainForSvm.txt";
+//        String filepath = "D:\\Algorithm\\testSet.txt";
+            SVMByKKT svmByKKT = new SVMByKKT(filepath);
+            svmByKKT.train();
+
+            String testFilePath = "C:\\Users\\dell\\Desktop\\waterData\\testForSvm.txt";
+            double prf = svmByKKT.prf(testFilePath);
+            System.out.println("准确率为" + prf);
+            count++;
         }
 
-        System.out.println(svmByKKT.b);
+        long elapse = System.currentTimeMillis() - start;
+        System.out.println("花费时间" + elapse / 1000.0 + "s");
 
     }
 }

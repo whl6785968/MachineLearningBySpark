@@ -55,5 +55,7 @@ public class NGram {
         System.out.println(segment.seg("商品和服务"));
 
         return new ViterbiSegment().enableAllNamedEntityRecognize(false).enableCustomDictionary(false);
+
+
     }
 }

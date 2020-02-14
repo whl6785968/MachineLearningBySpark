@@ -1,22 +1,22 @@
 package SVM;
 
 public class EijStorage {
-    public int index;
-    public double E;
+    public int j;
+    public double Ej;
 
-    public int getIndex() {
-        return index;
+    public int getJ() {
+        return j;
     }
 
-    public void setIndex(int index) {
-        this.index = index;
+    public void setJ(int j) {
+        this.j = j;
     }
 
-    public double getE() {
-        return E;
+    public double getEj() {
+        return Ej;
     }
 
-    public void setE(double e) {
-        E = e;
+    public void setEj(double ej) {
+        Ej = ej;
     }
 }

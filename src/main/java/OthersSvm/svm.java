@@ -1,6 +1,7 @@
 package OthersSvm;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
@@ -141,11 +142,13 @@ public class svm {
 	private static int innerL(int i) {
 		
 		double Ei = calcEk(i);
-		
+		System.out.println(" y is "+os.getLabelMat().get(i,0));
+		System.out.println("os alpha " + os.getAlphas().get(i,0));
+		System.out.println(os.getTol());
 	    if (((os.getLabelMat().get(i, 0) * Ei < -os.getTol()) && (os.getAlphas().get(i, 0) < os.getC())) 
 	    	   || ((os.getLabelMat().get(i, 0)  * Ei > os.getTol()) && (os.getAlphas().get(i, 0) > 0))){
 	    	SelectRs sr = selectJ(i,Ei);
-  	
+	    	int j = sr.getJ();
 	        double alphaIold = os.getAlphas().get(i, 0);
 
 	        double alphaJold = os.getAlphas().get(sr.getJ(), 0);
@@ -183,12 +186,15 @@ public class svm {
 	        		os.getAlphas().get(sr.getJ(), 0) - alphaJold) * os.getK().get(i, sr.getJ());
 	        double b2 = os.getB() - sr.getEj() - os.getLabelMat().get(i, 0) * (os.getAlphas().get(i, 0) - alphaIold) * os.getK().get(i, sr.getJ()) - os.getLabelMat().get(sr.getJ(), 0) * (
 	        		os.getAlphas().get(sr.getJ(), 0) - alphaJold) * os.getK().get(i, sr.getJ());
+
 	        if ((0 < os.getAlphas().get(i, 0)) && (os.getC() > os.getAlphas().get(i, 0)))
 	            os.setB(b1);
 	        else if ((0 < os.getAlphas().get(sr.getJ(), 0)) && (os.getC() > os.getAlphas().get(sr.getJ(), 0)))
 	        	os.setB(b2);
 	        else
 	        	os.setB((b1 + b2) / 2.0);
+
+			System.out.println("B is" + os.getB());
 	        return 1;
 	    }
 	    else{
@@ -280,15 +286,40 @@ public class svm {
 			return -1.0;	
 		
 	}
+
+	public static double getAccurate(String filePath,double[] ws) throws Exception {
+		BufferedReader br = new BufferedReader(new FileReader(filePath));
+		String line = null;
+		List<double[]> list = new ArrayList<double[]>();
+		List<Double> labels = new ArrayList<Double>();
+		while ((line = br.readLine()) != null){
+			String[] strings = line.split(",");
+			double[] data = new double[5];
+			for(int i = 0;i < strings.length-1;i++){
+				data[i] = Double.parseDouble(strings[i]);
+			}
+			list.add(data);
+			labels.add(Double.parseDouble(strings[5]));
+		}
+
+		double count = 0;
+		for(int i = 0;i < list.size();i++){
+			if(classify(list.get(i),ws,os.getB()) == labels.get(i)){
+				count += 1;
+			}
+		}
+
+		return count / list.size();
+	}
     
     
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		List<String> list = new ArrayList<String>();
         try{
-            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\dell\\Desktop\\data\\waterMelon2.0.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\dell\\Desktop\\waterForSvm.txt"));
             String s = null;
             while((s = br.readLine())!=null){
             	list.add(s);
@@ -298,17 +329,18 @@ public class svm {
             e.printStackTrace();
         }
         
-        DenseMatrix64F dataMatIn = new DenseMatrix64F(list.size(),2);
+        DenseMatrix64F dataMatIn = new DenseMatrix64F(list.size(),5);
         double[] classLabels = new double[list.size()];
         
         for(int i=0;i<list.size();i++) {
         	
-        	String[] items = list.get(i).split(" ");
-        	dataMatIn.set(i, 0, Double.parseDouble(items[1]));
-        	dataMatIn.set(i,1, Double.parseDouble(items[2]));
-//			dataMatIn.set(i, 2, Double.parseDouble(items[2]));
-//			dataMatIn.set(i,3, Double.parseDouble(items[3]));
-        	classLabels[i] = Double.parseDouble(items[3]);
+        	String[] items = list.get(i).split(",");
+        	dataMatIn.set(i, 0, Double.parseDouble(items[0]));
+        	dataMatIn.set(i,1, Double.parseDouble(items[1]));
+			dataMatIn.set(i, 2, Double.parseDouble(items[2]));
+			dataMatIn.set(i,3, Double.parseDouble(items[3]));
+			dataMatIn.set(i,3, Double.parseDouble(items[4]));
+        	classLabels[i] = Double.parseDouble(items[5]);
         }
         
         smoP(dataMatIn,classLabels,0.6 ,0.001, 40, new String [] {"lin", "0"});
@@ -319,17 +351,27 @@ public class svm {
         
         System.out.println("w1 is "+ws[0]);
         System.out.println("w2 is "+ws[1]);
-        
-        for(int i=0;i<dataMatIn.numRows;i++) {
-        	
-        	double [] intX = new double[dataMatIn.numCols];
-        	
-        	for(int j=0;j<dataMatIn.numCols;j++)
-        		intX[j] = dataMatIn.get(i, j);
 
-        	
-        	System.out.println(list.get(i)+"    训练推测分类："+classify(intX,ws,os.getB()));
-        }
+
+		double accurate = getAccurate("C:\\Users\\dell\\Desktop\\waterForTest.txt", ws);
+		System.out.println(accurate);
+//        for(int i=0;i<dataMatIn.numRows;i++) {
+//
+//        	double [] intX = new double[dataMatIn.numCols];
+//
+//        	for(int j=0;j<dataMatIn.numCols;j++)
+//        		intX[j] = dataMatIn.get(i, j);
+//
+//
+//        	System.out.println(list.get(i)+"    训练推测分类："+classify(intX,ws,os.getB()));
+//        }
+		double[] x = new double[5];
+		x[0] = 7.85;
+		x[1] = 8.5;
+		x[2] = 0.15;
+		x[3] = 1.77;
+		x[4] = 0;
+		System.out.println(classify(x,ws,os.getB()));
 		
 	}
 }

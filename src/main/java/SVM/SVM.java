@@ -30,7 +30,7 @@ public class SVM {
         xs = new ArrayList<double[][]>();
         ys = new ArrayList<Double>();
         while ((line = bufferedReader.readLine())!= null){
-            String[] strings = line.split(" ");
+            String[] strings = line.split(",");
             double x[][] = new double[2][1];
             for(int i = 0; i < 2; i++){
                 x[i][0] = Double.parseDouble(strings[i+1]);
@@ -54,6 +54,22 @@ public class SVM {
         w[0][0] = random.nextDouble();
         w[0][1] = random.nextDouble();
         b = random.nextDouble();
+    }
+
+    public void load_test_file(String filepath) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(filepath));
+        String line = null;
+        List test_x = new ArrayList<double[][]>();
+        while ((line = bufferedReader.readLine())!= null){
+            String[] strings = line.split(",");
+
+            double x[][] = new double[2][1];
+            for(int i = 0; i < 2; i++){
+                x[i][0] = Double.parseDouble(strings[i+1]);
+            }
+            xs.add(x);
+
+        }
     }
 
     public double calcgx(double[][] x){
@@ -358,8 +374,9 @@ public class SVM {
 
     public static void main(String[] args) throws IOException {
         String filepath = "C:\\Users\\dell\\Desktop\\data\\waterMelon2.0.txt";
+        String filepath2 = "C:\\Users\\dell\\Desktop\\data\\huaweicontest\\train_data.txt";
         SVM svm = new SVM();
-        svm.init(filepath);
+        svm.init(filepath2);
         double[][] w = svm.w;
         for(double[] d1 : w){
             for(double d : d1){

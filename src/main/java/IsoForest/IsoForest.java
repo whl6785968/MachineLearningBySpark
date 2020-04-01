@@ -96,11 +96,6 @@ class IForest implements Serializable{
             throw new IllegalArgumentException("请训练后再预测");
         }
 
-//        double[] logisticCoef = {0.53022157,0.41180608,-0.54287232,-1.35365107,0.05589461};
-//
-//        for (int i = 0 ;i < x.numCols;i++){
-//            x.set(0,i,x.get(0,i) * logisticCoef[i]);
-//        }
 
         double sum = 0;
         for(int i = 0;i < iTrees.size();i++){
@@ -110,21 +105,19 @@ class IForest implements Serializable{
         double exponent = -(sum/iTrees.size())/cost(256);
 
         double score = Math.pow(2,exponent);
+//        boolean serious = isSerious(x);
+//        int errNum = getErrNum(x);
+//
+//        if(serious){
+//            return -1;
+//        }
 
-        boolean serious = isSerious(x);
-        int errNum = getErrNum(x);
-
-        if(serious){
-            return -1;
-        }
-
-
+//        System.out.println(score);
         if(score > this.score){
-
-            return -1;
+            return 1;
         }
         else {
-            return 1;
+            return 0;
         }
     }
 
@@ -224,43 +217,77 @@ class IForest implements Serializable{
         return result + intercept;
     }
 
-    public double getAccurate(String filepath) throws IOException {
+    public List<DenseMatrix64F> load_test_file(String filepath) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filepath));
         String line = null;
-        List<String> lists = new ArrayList<String>();
-        while ((line = reader.readLine()) != null){
-            lists.add(line);
+        List<String> lines = new ArrayList<>();
+        while((line = reader.readLine()) != null){
+            lines.add(line);
         }
 
-        int cols = lists.get(0).split(",").length-1;
-
-
-        List<DenseMatrix64F> testData = new ArrayList<DenseMatrix64F>();
-        List<Double> ys = new ArrayList<Double>();
-
-        for (int i = 0;i< lists.size();i++){
-            String[] strings = lists.get(i).split(",");
-            DenseMatrix64F denseMatrix64F = new DenseMatrix64F(1, cols);
-            for (int j = 0;j < cols;j++){
-                denseMatrix64F.set(0,j,Double.parseDouble(strings[j]));
+        int col = lines.get(0).split(",").length;
+        List<DenseMatrix64F> denseMatrix64FList = new ArrayList<>();
+        for(int i = 0;i < lines.size() ;i++){
+            DenseMatrix64F denseMatrix64F = new DenseMatrix64F(1, col);
+            String[] datas = lines.get(i).split(",");
+            for(int j = 0;j < datas.length;j++){
+                denseMatrix64F.set(0,j,Double.parseDouble(datas[j]));
             }
-            testData.add(denseMatrix64F);
-            ys.add(Double.parseDouble(strings[5]));
+            denseMatrix64FList.add(denseMatrix64F);
         }
 
+        return denseMatrix64FList;
+    }
+
+    public List<Integer> get_test_label(String answer_path) throws IOException {
+        ArrayList<Integer> labels = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new FileReader(answer_path));
+        String line = null;
+        while((line = reader.readLine()) != null){
+            labels.add(Integer.parseInt(line.replace("\n","")));
+        }
+        return labels;
+    }
+
+    public double getAccurate(String filepath,String answer_path) throws IOException {
+//        BufferedReader reader = new BufferedReader(new FileReader(filepath));
+//        String line = null;
+//        List<String> lists = new ArrayList<String>();
+//        while ((line = reader.readLine()) != null){
+//            lists.add(line);
+//        }
+//
+//        int cols = lists.get(0).split(",").length-1;
+//
+//
+//        List<DenseMatrix64F> testData = new ArrayList<DenseMatrix64F>();
+//        List<Double> ys = new ArrayList<Double>();
+
+//        for (int i = 0;i< lists.size();i++){
+//            String[] strings = lists.get(i).split(",");
+//            DenseMatrix64F denseMatrix64F = new DenseMatrix64F(1, cols);
+//            for (int j = 0;j < cols;j++){
+//                denseMatrix64F.set(0,j,Double.parseDouble(strings[j]));
+//            }
+//            testData.add(denseMatrix64F);
+//            ys.add(Double.parseDouble(strings[5]));
+//        }
+
+        List<DenseMatrix64F> testData = load_test_file(filepath);
+        List<Integer> ys = get_test_label(answer_path);
         double count = 0.0;
         for (int i = 0; i < testData.size();i++){
             double predict = predict(testData.get(i));
             if(predict == ys.get(i)){
                 count += 1.0;
             }
-            else {
-                double excessOfKmno = getExcessOfKmno(testData.get(i));
-                double excessOfNh = getExcessOfNh(testData.get(i));
+//            else {
+//                double excessOfKmno = getExcessOfKmno(testData.get(i));
+//                double excessOfNh = getExcessOfNh(testData.get(i));
 //                System.out.println("excessOfKmno: " + excessOfKmno);
-//                System.out.println("excessOfNh: " + excessOfNh );
-                System.out.println(testData.get(i) + ":" + ys.get(i) + ":" + predict);
-            }
+//              System.out.println("excessOfNh: " + excessOfNh );
+//                System.out.println(testData.get(i) + ":" + ys.get(i) + ":" + predict);
+//            }
 
         }
 
@@ -292,6 +319,29 @@ public class IsoForest {
         return data;
     }
 
+    public static List<DenseMatrix64F> load_test_file(String filepath) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(filepath));
+        String line = null;
+        List<String> lines = new ArrayList<>();
+        while((line = reader.readLine()) != null){
+            lines.add(line);
+        }
+
+        int col = lines.get(0).split(",").length;
+        List<DenseMatrix64F> denseMatrix64FList = new ArrayList<>();
+        for(int i = 0;i < lines.size() ;i++){
+            DenseMatrix64F denseMatrix64F = new DenseMatrix64F(1, col);
+            String[] datas = lines.get(i).split(",");
+            for(int j = 0;j < datas.length;j++){
+                denseMatrix64F.set(0,j,Double.parseDouble(datas[j]));
+            }
+            denseMatrix64FList.add(denseMatrix64F);
+        }
+
+        return denseMatrix64FList;
+
+    }
+
     public DenseMatrix64F getSubSample(DenseMatrix64F dataSet,int subSampleCount){
         int features = dataSet.numCols;
         DenseMatrix64F subSample = new DenseMatrix64F(subSampleCount,features);
@@ -314,7 +364,7 @@ public class IsoForest {
         int numFeatures = dataSet.numCols;
 
         int maxSamples = 256;
-        int subSampleSize = Math.min(256,rows);
+        int subSampleSize = Math.min(2000,rows);
 
         List<Future<ITree>> futureList = new ArrayList<>();
 
@@ -468,26 +518,29 @@ public class IsoForest {
         List<Double> maxScoreList = new ArrayList<Double>();
         String filepath = "C:\\Users\\dell\\Desktop\\waterData\\water2.txt";
         String testPath = "C:\\Users\\dell\\Desktop\\waterData\\testForIsoForest.txt";
+        String filepath2 = "C:\\Users\\dell\\Desktop\\data\\huaweicontest\\train_data.txt";
+        String testpath2 = "C:\\Users\\dell\\Desktop\\data\\huaweicontest\\test_data.txt";
+        String answer_path = "C:\\Users\\dell\\Desktop\\data\\huaweicontest\\answer.txt";
 //
 //        while (count < 20){
-//            double score = 0.40;
-//            double maxAccurate = 0;
-//            double maxScore = 0.0;
-//            IsoForest isoForest = new IsoForest();
-//            while (score < 0.7){
-//                IForest forest = isoForest.train(filepath,score);
-//                score += 0.001;
-//                double accurate = forest.getAccurate(testPath);
-//                if(accurate > maxAccurate){
-//                    maxAccurate = accurate;
-//                    maxScore = score;
-//                }
+//        double score = 0.4;
+//        double maxAccurate = 0;
+//        double maxScore = 0.0;
+//        IsoForest isoForest = new IsoForest();
+//        while (score < 0.6){
+//            IForest forest = isoForest.train(filepath,score);
+//            score += 0.001;
+//            double accurate = forest.getAccurate(testpath2,answer_path);
+//            if(accurate > maxAccurate){
+//                maxAccurate = accurate;
+//                maxScore = score;
 //            }
-//            System.out.println("maxAccurate is " + maxAccurate);
-//            System.out.println("maxScore is " + maxScore);
-//            maxScoreList.add(maxScore);
-//            count++;
 //        }
+//        System.out.println("maxAccurate is " + maxAccurate);
+//        System.out.println("maxScore is " + maxScore);
+//        maxScoreList.add(maxScore);
+//        count++;
+////        }
 //        long elapse = System.currentTimeMillis() - start;
 //        System.out.println("花费时间" + elapse / 1000.0 + "s");
 
@@ -498,16 +551,27 @@ public class IsoForest {
 //        double accurate = iForest.getAccurate("C:\\Users\\dell\\Desktop\\waterData\\testForIsoForest.txt");
 //        System.out.println(accurate);
 
-        double score = 0.5;
+        double score = 0.45;
         IsoForest isoForest = new IsoForest();
-        for (int i = 0;i < 10000;i++){
-            IForest iForest = isoForest.train(filepath, score);
+        List<DenseMatrix64F> denseMatrix64FList = isoForest.load_test_file(testpath2);
+        IForest iForest = isoForest.train(filepath2, score);
+//        for(DenseMatrix64F data : denseMatrix64FList){
+//            double predict = iForest.predict(data);
+//        }
+        double accurate = iForest.getAccurate(testpath2, answer_path);
+        System.out.println(accurate);
+
+
+
+//        iForest.predict();
+//        for (int i = 0;i < 10000;i++){
+//            IForest iForest = isoForest.train(filepath2, score);
 //            double accurate = iForest.getAccurate(testPath);
 //            System.out.println(accurate);
-        }
+//        }
 
-        long elapse = System.currentTimeMillis() - start;
-        System.out.println("花费时间" + elapse / 1000.0 + "s");
+//        long elapse = System.currentTimeMillis() - start;
+//        System.out.println("花费时间" + elapse / 1000.0 + "s");
 
 //        double accurate = iForest.getAccurate(testPath);
 //        System.out.println(accurate);

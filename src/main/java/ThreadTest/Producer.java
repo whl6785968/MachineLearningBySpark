@@ -9,9 +9,9 @@ public class Producer implements Runnable {
 
     @Override
     public void run() {
-     while (true){
-         r.set("duck");
-     }
+        while (true){
+            r.set("duck");
+        }
     }
 }
 

@@ -38,7 +38,7 @@ public class DataProcessor {
         return map;
     }
 
-    public Map<String,Object> load_huawei_data(String filename) throws IOException {
+    public final Map<String,Object> load_huawei_data(String filename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         String line;
         Map<String,Object> map = new HashMap<>();

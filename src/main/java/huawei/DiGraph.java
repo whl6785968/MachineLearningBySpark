@@ -1,34 +1,60 @@
 package huawei;
 
-import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.TreeSet;
 
 public class DiGraph {
     private final int V;
     private int E;
-    private int max_node;
-    private Bag<DirectedEdge>[] adj;
+    private LinkedList<Integer>[] adj;
+    private int[] inDegree;
+    private int[] outDegree;
 
-    public DiGraph(int V,int max_node){
+
+    public DiGraph(int V, int E, List<int[]> data){
         this.V = V;
-        this.E = 0;
-        this.max_node = max_node;
-        adj = (Bag<DirectedEdge>[]) new Bag[max_node];
+        this.E = E;
 
-        for(int i = 0;i < max_node;i++){
-            adj[i] = new Bag<DirectedEdge>();
+        adj = (LinkedList<Integer>[])new LinkedList[V];
+        inDegree = new int[V];
+        outDegree = new int[V];
+//        adj = new TreeSet[V];
+        for(int i = 0;i < V;i++){
+            //每个顶点的临边都是一个链表
+//            adj[i] = new TreeSet<Integer>();
+            adj[i] = new LinkedList<Integer>();
+        }
+
+        for(int i=0;i<data.size();i++){
+            int v = data.get(i)[0];
+            int w = data.get(i)[1];
+            addEdge(v,w);
         }
     }
 
-    public DiGraph(List<int[]> data,int num_nodes,int max_node){
-        this(num_nodes,max_node);
-        this.E = data.size();
-        for(int[] array : data){
-            int source = array[0];
-            int dest = array[1];
-            DirectedEdge directedEdge = new DirectedEdge(source, dest);
-            addEdge(directedEdge);
-        }
+    public int indegree(int v){
+        return inDegree[v];
+    }
+
+    public int outdegree(int v){
+        return outDegree[v];
+    }
+
+    public void removeAllEdge(int v){
+        E -= adj[v].size();
+        adj[v] = new LinkedList<>();
+    }
+
+    public void addEdge(int v,int w){
+        inDegree[v] += 1 ;
+        outDegree[w] += 1;
+        adj[v].add(w);
+        E++;
+    }
+
+    public Iterable<Integer> adj(int v){
+        return adj[v];
     }
 
     public int V(){
@@ -39,30 +65,24 @@ public class DiGraph {
         return E;
     }
 
-    public int getMaxNode(){
-        return max_node;
+    public int degree(DiGraph g,int v){
+        int degree = 0;
+        for(int d : g.adj(v)){
+            degree++;
+        }
+
+        return degree;
     }
 
-    public void addEdge(DirectedEdge edge){
-        adj[edge.from()].add(edge);
-        E++;
+    public int maxDegree(DiGraph g) {
+        int max = 0;
+        for (int v = 0; v < g.V(); v++) {
+            if (degree(g,v) > max) {
+                max = degree(g,v);
+            }
+        }
+        return max;
     }
-
-    public Bag<DirectedEdge> adj(int v){
-        return adj[v];
-    }
-
-//    public DiGraph reverse(){
-//        DiGraph diGraph = new DiGraph(V);
-//        for(int i=0;i<V;i++){
-//            for(int w:adj[i]){
-//                diGraph.addEdge(w,i);
-//            }
-//        }
-//
-//        return diGraph;
-//    }
-
 
 
 }

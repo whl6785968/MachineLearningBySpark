@@ -1,14 +1,21 @@
 package ThreadTest;
 
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Resource {
     private String name;
     private int count = 1;
     private boolean flag = false;
+    ReentrantLock lock = new ReentrantLock();
+    Condition producer_con = lock.newCondition();
+    Condition consumer_con = lock.newCondition();
 
-    public synchronized void set(String name){
+    public void set(String name){
+        lock.lock();
         while (flag){
             try {
-                wait();
+                producer_con.await();
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -18,13 +25,17 @@ public class Resource {
         count++;
         System.out.println(Thread.currentThread().getName() + " produces " + this.name);
         flag = true;
-        notifyAll();
+//        notifyAll();
+        consumer_con.signal();
+        lock.unlock();
     }
 
-    public synchronized void out(){
+    public void out(){
+        lock.lock();
         while (!flag){
             try {
-                wait();
+//                wait();
+                consumer_con.await();
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -32,6 +43,9 @@ public class Resource {
         }
         System.out.println(Thread.currentThread().getName() + " consumes " + this.name);
         flag = false;
-        notifyAll();
+
+        producer_con.signal();
+        lock.unlock();
+//        notifyAll();
     }
 }

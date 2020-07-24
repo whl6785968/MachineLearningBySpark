@@ -6,7 +6,9 @@ package GraphTheory;
 //
 
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 public class Stack<Item> implements Iterable<Item> {
@@ -49,6 +51,24 @@ public class Stack<Item> implements Iterable<Item> {
         } else {
             return this.first.item;
         }
+    }
+
+    public Item second(){
+        if (this.isEmpty()) {
+            throw new NoSuchElementException("Stack underflow");
+        } else {
+            return this.first.next.item;
+        }
+    }
+
+    public List<Item> toList(){
+        List<Item> list = new ArrayList<>();
+        Iterator<Item> it = iterator();
+        while (it.hasNext()){
+            list.add(it.next());
+        }
+
+        return list;
     }
 
     public String toString() {

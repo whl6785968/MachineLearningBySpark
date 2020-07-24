@@ -1,30 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="match" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7f6dca49-4028-4e3d-bc69-3c1ac0222873" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/BreadthFristSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/CC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/Cycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/DataProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/DepthFirstSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/DiGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/DiGraphCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/DirectedDfs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/GraphUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/OutputFixForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/SymbolGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/tinyG.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/Bag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/DataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/DirectedDfs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/DirectedEdge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/match.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcKing/Package_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcKing/Package_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcKing/Package_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AcKing/Package_04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Adaptee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/ConcreateTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Target.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Factory/Java.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Factory/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Factory/Python.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Factory/Vedio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Factory/VedioFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Segeration/Segeration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Singleton/EnumInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Singleton/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Singleton/Singleton1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DesignModel/Singleton/ThreadLocalInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoryTst/AbastractFactory/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoryTst/AbastractFactory/FactoryForApple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoryTst/AbastractFactory/FactoryForBanana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoryTst/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoryTst/Banana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoryTst/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FactoryTst/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FastSlowPointer/FastSlowPointer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/DepthFirstOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/Judge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/KosarajuSCC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/Topological.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/TransitiveClosure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/Tst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/UnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/smallG.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/tinyDG.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ImproveGraphAttempt/DiGraphByDiEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ImproveGraphAttempt/DirectedCycleByEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interview/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interview/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/Solution26.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/Solution283.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/BagQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/CQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/CQueue2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution134.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution392.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution435.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/MyStack2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/P343.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution07_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution108.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution120.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution122.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution130.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution17_13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution198.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution23.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution26.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution27.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution28.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution29.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution300.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution309.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution32.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution32_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution35.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution378.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution38.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution416.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution43.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution45.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution455.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution46_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution47.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution48.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution49.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution54.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution55.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution55_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution58_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution58_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution59_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution63.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution695.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution70.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution718.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution77.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/Solution785.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/SolutionN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Leetcode/SolutionN_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/SortAlgo/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter2/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter3/LoopQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter3/MaxPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter3/MaxQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter3/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter3/Solution_20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter3/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter4/CustomizedLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter4/LinkedListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter4/Solution203.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter6/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter6/BST2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/chapter6/BlankReplace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MooC/dynamicPlan/Fab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OtherTst/DiGraphByDiEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OtherTst/DirectedCycleByEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OtherTst/DirectedEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OtherTst/Topological.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/RedisDemo/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SocketTst/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SocketTst/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ThreadTest/SemaphoreTst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/concurrentProgramming/CustomizeLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/concurrentProgramming/UnsafeInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/DataProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/DiGraphCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/DiGraphCycleX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/GraphUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/Judge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/Tarjan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/huawei/UnionFind.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DMPProgrameer" beforeDir="false" afterPath="$PROJECT_DIR$/../DMPProgrameer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IsoForest/IsoForest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IsoForest/IsoForest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SVM/SVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SVM/SVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark-test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraphTheory/CC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/CC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraphTheory/DataProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/DataProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraphTheory/DiGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/DiGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraphTheory/DiGraphCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/DiGraphCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraphTheory/GraphUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/GraphUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraphTheory/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraphTheory/tinyG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphTheory/tinyG.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OtherTst/Tst1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OtherTst/Tst1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ThreadTest/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ThreadTest/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ThreadTest/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ThreadTest/Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huawei/Bag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huawei/DataGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huawei/DiGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huawei/DiGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huawei/DirectedDfs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huawei/DirectedEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huawei/LinkedStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huawei/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huawei/Stack.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +169,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/spark_test$DirectedCycleByEdge.ic" NAME="DirectedCycleByEdge Coverage Results" MODIFIED="1586312544940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ImproveGraphAttempt.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/spark_test$SolutionN.ic" NAME="SolutionN Coverage Results" MODIFIED="1593916666787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Leetcode.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -50,34 +195,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/SymbolGraph.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RedisDemo/Demo1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/DataProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1216">
-              <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/DiGraphCycle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1676">
-              <caret line="3" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="38" />
+            <state relative-caret-position="123">
+              <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,47 +207,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/DiGraph.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/Solution26.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1018#1019#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/Stack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
-              <caret line="58" column="41" lean-forward="true" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#1464#1465#0" expanded="true" />
-                <element signature="e#1515#1516#0" expanded="true" />
-                <element signature="e#2140#2141#0" expanded="true" />
-                <element signature="e#2184#2185#0" expanded="true" />
-                <element signature="e#2220#2221#0" expanded="true" />
-                <element signature="e#2271#2272#0" expanded="true" />
-                <element signature="e#2303#2304#0" expanded="true" />
-                <element signature="e#2368#2369#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/DepthFirstSearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="300">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,27 +223,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>classify</find>
-      <find>Ej</find>
-      <find>sr.getEj()</find>
-      <find>getABetween0C</find>
-      <find>a1</find>
-      <find>gete</find>
-      <find>geteCache</find>
-      <find>eCache</find>
-      <find>os.geteCache()</find>
-      <find>calc</find>
-      <find>labelMat</find>
-      <find>smoP</find>
-      <find>b</find>
-      <find>setB</find>
-      <find>getW</find>
       <find>linearKernel</find>
       <find>rbfKernel</find>
       <find>numTr</find>
@@ -175,9 +246,25 @@
       <find>System.out</find>
       <find>numT</find>
       <find>edu.princeton.cs.algs4.Stack.</find>
+      <find>Syste</find>
+      <find>currentLengthStack</find>
+      <find>Sta</find>
+      <find>first</find>
+      <find>Stack</find>
+      <find>bag</find>
+      <find>save</find>
+      <find>parallelStream</find>
+      <find>DirectedEdge</find>
+      <find>Queue</find>
+      <find>root</find>
+      <find>dfs</find>
+      <find>MooC.chapter3.Stack.</find>
+      <find>tmp</find>
+      <find>pass</find>
     </findStrings>
     <replaceStrings>
       <replace>Double</replace>
+      <replace>DiEdge</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -186,57 +273,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/hanlp.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/JavaTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HanLpTest/collection/Trie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HanLpTest/collection/ArrayTool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HanLpTest/collection/BaseNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HanLpTest/collection/Node.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HanLpTest/HanLpCut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HanLpTest/StopWordTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HanLpTest/CWSEvaluator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/OthersSvm/OptStruct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/OthersSvm/SelectRs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SVM/EijStorage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/OthersSvm/svm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/OtherTst/Tst1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SVM/SVMByKKT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/IsoForest/IsoForestTst.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HanLpTest/chapter3/NGram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution122.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution58_2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution29.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/MyStack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/MyStack2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Interview/Main1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution17_13.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/P343.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution198.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution309.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution45.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution49.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution43.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/CQueue2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Interview/Main2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Segeration/Segeration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution455.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Singleton/Singleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Singleton/Singleton1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/BagQuestion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution416.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution300.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Singleton/EnumInstance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Singleton/ThreadLocalInstance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Factory/EasyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Factory/Vedio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Factory/Java.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Factory/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Factory/Python.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Factory/VedioFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Target.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/ConcreateTarget.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Adaptee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Adapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution38.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution17.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution46_2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution77.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AcKing/Package_01.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AcKing/Package_02.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AcKing/Package_03.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AcKing/Package_04.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution392.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Solution435.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution134.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadTest/Producer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadTest/Consumer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadTest/Resource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadTest/ThredDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadTest/ForkJoinTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadTest/ForkJoinTest2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadTest/OtherTst.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadTest/LambdaTs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadTest/StreamTst.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadTest/ThreadPoolTst.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SVM/SVM.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DecisionTree/ParallelDecisionTree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/IsoForest/IsoForest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huawei/LinkedStack.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huawei/Bag.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huawei/DataGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huawei/DirectedEdge.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huawei/DiGraph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huawei/DirectedDfs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/Graph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/DepthFirstSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/BreadthFristSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/CC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/Cycle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/SymbolGraph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/DiGraph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/DirectedDfs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/tinyG.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/OutputFixForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/GraphUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/DataProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/Stack.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraphTheory/DiGraphCycle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RedisDemo/Demo1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/BinarySearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/Solution283.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/Solution26.java" />
       </list>
     </option>
   </component>
@@ -259,8 +346,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="370" />
-    <option name="y" value="220" />
+    <option name="x" value="345" />
+    <option name="y" value="203" />
     <option name="width" value="1555" />
     <option name="height" value="805" />
   </component>
@@ -270,6 +357,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -310,38 +399,60 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="GraphTheory" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Leetcode" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="spark-test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="spark-test" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Leetcode" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ArrayDemo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="spark-test" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="spark-test" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="RedisDemo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585730582870" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595555353213" />
     <property name="last_opened_file_path" value="D:/Algorithm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.16189536" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\test\spark-test\src\main\java" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\test\spark-test\src\main\java\GraphTheory" />
+      <recent name="F:\test\spark-test\src\main\java\huawei" />
       <recent name="F:\test\spark-test\src\main\java\OthersSvm" />
       <recent name="F:\test\spark-test\src\main\java\SVM" />
       <recent name="F:\test\spark-test\src\main\resources" />
-      <recent name="F:\test\spark-test\src\main\java\HanLpTest\data" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ImproveGraphAttempt" />
+      <recent name="huawei" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\test\spark-test\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -356,13 +467,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DiGraphCycle">
-    <configuration name="BreadthFristSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphTheory.BreadthFristSearch" />
+  <component name="RunManager" selected="Application.Solution26">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.ArrayDemo.BinarySearch" />
       <module name="spark-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GraphTheory.*" />
+          <option name="PATTERN" value="Leetcode.ArrayDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -370,12 +481,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphTheory.CC" />
+    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RedisDemo.Demo1" />
       <module name="spark-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GraphTheory.*" />
+          <option name="PATTERN" value="RedisDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -383,12 +494,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Cycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphTheory.Cycle" />
+    <configuration name="Solution134" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.Greedy.Solution134" />
       <module name="spark-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GraphTheory.*" />
+          <option name="PATTERN" value="Leetcode.Greedy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -396,12 +507,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiGraphCycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphTheory.DiGraphCycle" />
+    <configuration name="Solution26" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.ArrayDemo.Solution26" />
       <module name="spark-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GraphTheory.*" />
+          <option name="PATTERN" value="Leetcode.ArrayDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -409,12 +520,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DirectedDfs (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphTheory.DirectedDfs" />
+    <configuration name="Solution283" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.ArrayDemo.Solution283" />
       <module name="spark-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GraphTheory.*" />
+          <option name="PATTERN" value="Leetcode.ArrayDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -424,11 +535,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DiGraphCycle" />
-        <item itemvalue="Application.DirectedDfs (1)" />
-        <item itemvalue="Application.Cycle" />
-        <item itemvalue="Application.CC" />
-        <item itemvalue="Application.BreadthFristSearch" />
+        <item itemvalue="Application.Solution26" />
+        <item itemvalue="Application.Solution283" />
+        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.Demo1" />
+        <item itemvalue="Application.Solution134" />
       </list>
     </recent_temporary>
   </component>
@@ -479,6 +590,75 @@
       <workItem from="1585695326154" duration="27878000" />
       <workItem from="1585729552402" duration="98000" />
       <workItem from="1585729794671" duration="783000" />
+      <workItem from="1585745586251" duration="763000" />
+      <workItem from="1585780209831" duration="1949000" />
+      <workItem from="1585808011708" duration="11857000" />
+      <workItem from="1585874678946" duration="26928000" />
+      <workItem from="1585952992785" duration="32519000" />
+      <workItem from="1586042240261" duration="18766000" />
+      <workItem from="1586069693559" duration="14732000" />
+      <workItem from="1586131511215" duration="9760000" />
+      <workItem from="1586142628716" duration="541000" />
+      <workItem from="1586147669458" duration="3856000" />
+      <workItem from="1586166260140" duration="2635000" />
+      <workItem from="1586174684646" duration="1246000" />
+      <workItem from="1586214840171" duration="4625000" />
+      <workItem from="1586225204335" duration="42000" />
+      <workItem from="1586226879656" duration="1482000" />
+      <workItem from="1586229011048" duration="17863000" />
+      <workItem from="1586253421795" duration="451000" />
+      <workItem from="1586311046319" duration="11542000" />
+      <workItem from="1586335813096" duration="3434000" />
+      <workItem from="1586342353326" duration="18000" />
+      <workItem from="1586342520921" duration="5228000" />
+      <workItem from="1586351673772" duration="16000" />
+      <workItem from="1586388722971" duration="74000" />
+      <workItem from="1586410791929" duration="6154000" />
+      <workItem from="1586421147172" duration="152000" />
+      <workItem from="1586423341148" duration="135000" />
+      <workItem from="1586471851507" duration="425000" />
+      <workItem from="1586558306060" duration="23000" />
+      <workItem from="1586558464437" duration="1972000" />
+      <workItem from="1586645105835" duration="849000" />
+      <workItem from="1586758549687" duration="1901000" />
+      <workItem from="1586820250720" duration="656000" />
+      <workItem from="1587969857840" duration="96000" />
+      <workItem from="1591270297809" duration="4250000" />
+      <workItem from="1591343146457" duration="9934000" />
+      <workItem from="1591406615668" duration="13413000" />
+      <workItem from="1592188212223" duration="35000" />
+      <workItem from="1592617732793" duration="10126000" />
+      <workItem from="1592708483381" duration="1306000" />
+      <workItem from="1592809046223" duration="6624000" />
+      <workItem from="1592985401024" duration="143000" />
+      <workItem from="1593072500185" duration="1881000" />
+      <workItem from="1593176513037" duration="3775000" />
+      <workItem from="1593312869692" duration="14000" />
+      <workItem from="1593344693693" duration="3007000" />
+      <workItem from="1593395347232" duration="13998000" />
+      <workItem from="1593436349356" duration="477000" />
+      <workItem from="1593498443808" duration="23541000" />
+      <workItem from="1593674351771" duration="13944000" />
+      <workItem from="1593757978568" duration="8257000" />
+      <workItem from="1593825619898" duration="13298000" />
+      <workItem from="1593911855699" duration="28135000" />
+      <workItem from="1594083682269" duration="14142000" />
+      <workItem from="1594167094960" duration="3828000" />
+      <workItem from="1594257743664" duration="3549000" />
+      <workItem from="1594281743888" duration="794000" />
+      <workItem from="1594341275388" duration="8777000" />
+      <workItem from="1594472466104" duration="9276000" />
+      <workItem from="1594618105264" duration="1087000" />
+      <workItem from="1594619509716" duration="3000" />
+      <workItem from="1594628118605" duration="204000" />
+      <workItem from="1594711646270" duration="17931000" />
+      <workItem from="1594818028242" duration="2302000" />
+      <workItem from="1594821616235" duration="3224000" />
+      <workItem from="1594882017582" duration="595000" />
+      <workItem from="1595038470674" duration="8231000" />
+      <workItem from="1595298260717" duration="4332000" />
+      <workItem from="1595400247737" duration="12753000" />
+      <workItem from="1595472169136" duration="14042000" />
     </task>
     <task id="LOCAL-00001" summary="ADD SVM">
       <created>1575364211772</created>
@@ -530,12 +710,21 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243513000" />
+    <option name="totallyTimeSpent" value="687431000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2627346" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22591588" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -543,30 +732,31 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28328612" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.407932" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.328125" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23828125" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.29166666" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.33002833" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3294271" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.16823056" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32937062" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
-      <window_info anchor="right" id="SciView" order="9" />
+      <window_info anchor="right" id="SciView" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.16823056" />
       <window_info anchor="right" id="Database" order="10" weight="0.3297587" />
+      <window_info anchor="right" id="Bean Validation" order="11" side_tool="true" weight="0.3297587" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,24 +813,6 @@
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/huawei/LinkedStack.java</url>
-          <line>144</line>
-          <properties />
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/huawei/LinkedStack.java</url>
-          <line>120</line>
-          <properties />
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/huawei/DirectedDfs.java</url>
-          <line>115</line>
-          <properties />
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/GraphTheory/DepthFirstSearch.java</url>
           <line>25</line>
           <properties />
@@ -665,10 +837,376 @@
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GraphTheory/DiGraphCycle.java</url>
-          <line>100</line>
+          <url>file://$PROJECT_DIR$/src/main/java/OtherTst/Tst1.java</url>
+          <line>76</line>
           <properties />
-          <option name="timeStamp" value="112" />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/OtherTst/DirectedCycleByEdge.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution130.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/huawei/DiGraphCycle.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GraphTheory/Tst.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GraphTheory/CC.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GraphTheory/CC.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ImproveGraphAttempt/DirectedCycleByEdge.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/huawei/DiGraphCycleX.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GraphTheory/KosarajuSCC.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GraphTheory/DiGraphCycle.java</url>
+          <line>279</line>
+          <properties />
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GraphTheory/DiGraphCycle.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MooC/chapter2/Array.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MooC/chapter3/Queue.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MooC/SortAlgo/Example.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MooC/SortAlgo/Example.java</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MooC/chapter4/CustomizedLinkedList.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MooC/chapter4/Solution203.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MooC/chapter6/BlankReplace.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MooC/chapter6/BST.java</url>
+          <line>197</line>
+          <properties />
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MooC/chapter6/BST2.java</url>
+          <line>149</line>
+          <properties />
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution07.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/CQueue.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution70.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution378.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution108.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution23.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution32.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution64.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution32_1.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution47.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution58_1.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution59_1.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/SolutionN.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/SolutionN_1.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution12.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution13.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution48.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution63.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="321" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution63.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution63.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution122.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution122.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="329" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution29.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="337" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution29.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="338" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Interview/Main1.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution198.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="343" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution309.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="345" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution49.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="346" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution49.java</url>
+          <line>4</line>
+          <properties />
+          <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution43.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="348" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution455.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="369" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution416.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="371" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution38.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution46_2.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="373" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Solution77.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="375" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution392.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="378" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution435.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="380" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution134.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="386" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/BinarySearch.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="387" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/Solution283.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="389" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/Solution26.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="390" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -678,501 +1216,463 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/OtherTst/Tst1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution23.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SVM/SVMByKKT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="511" selection-start-line="511" selection-end-line="511" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java1.8/src.zip!/java/io/ByteArrayOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-328">
-          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-          <folding>
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HanLpTest/collection/BaseNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2137">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="76">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HanLpTest/HanLpCut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HanLpTest/chapter3/NGram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadTest/ThredDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadTest/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#105#106#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadTest/Producer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#136#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadTest/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadTest/ForkJoinTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380">
-          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadTest/ForkJoinTest2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution49.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/MyStack2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution43.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding>
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Segeration/Segeration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="69" column="17" lean-forward="true" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+          <folding>
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+            <element signature="e#1397#1398#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interview/Main2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="886">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadTest/OtherTst.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/huawei/DiGraphCycle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="148">
+          <caret line="179" column="29" selection-start-line="179" selection-start-column="29" selection-end-line="179" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/java1.8/src.zip!/java/util/Comparator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution455.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadTest/LambdaTs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java1.8/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3595">
-          <caret line="803" column="16" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java1.8/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java1.8/src.zip!/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadTest/ThreadPoolTst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="98" column="56" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="56" />
+        <state relative-caret-position="114">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadTest/StreamTst.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SocketTst/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="102" column="54" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="7" selection-start-line="7" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IsoForest/IsoForestTst.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SocketTst/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="86" lean-forward="true" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="6" selection-start-line="6" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/OthersSvm/svm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Singleton/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
-          <caret line="305" selection-start-line="305" selection-end-line="305" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SVM/SVM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="378" column="26" selection-start-line="378" selection-start-column="26" selection-end-line="378" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DecisionTree/ParallelDecisionTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IsoForest/IsoForest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java1.8/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huawei/LinkedStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="109" column="60" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huawei/DiGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huawei/Bag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="266">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huawei/DirectedEdge.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Singleton/Singleton1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="190">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huawei/Stack.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution300.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution416.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="56" column="33" lean-forward="true" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Singleton/EnumInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding>
+            <element signature="e#117#118#0" expanded="true" />
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Singleton/ThreadLocalInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Factory/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Factory/Python.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#109#110#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Factory/Vedio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Factory/Java.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Factory/VedioFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/MyStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/CQueue2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/CQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Adapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Adaptee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <element signature="e#98#99#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/ConcreateTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DesignModel/Adapter/classAdapter/Target.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution46_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution17.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution46.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution38.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Solution77.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AcKing.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/BagQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AcKing/Package_02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AcKing/Package_04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AcKing/Package_03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AcKing/Package_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RedisDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution134.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution435.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Greedy/Solution392.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-201">
+          <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Jedis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8968">
+          <caret line="531" column="75" selection-start-line="531" selection-start-column="75" selection-end-line="531" selection-end-column="75" />
+          <folding>
+            <element signature="e#1777#1778#0" expanded="true" />
+            <element signature="e#1819#1820#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/Array.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huawei/DirectedDfs.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/Solution283.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1233#1234#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#1333#1334#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/java1.8/jre/lib/ext/algs4.jar!/edu/princeton/cs/algs4/DirectedCycle.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+        <state relative-caret-position="164">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RedisDemo/Demo1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java1.8/jre/lib/ext/algs4.jar!/edu/princeton/cs/algs4/Digraph.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huawei/DataGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="33" column="9" selection-start-line="19" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="123">
+          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/CC.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Leetcode/ArrayDemo/Solution26.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="30" column="5" selection-start-line="22" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="300">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/BreadthFristSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="64" column="42" selection-start-line="58" selection-start-column="8" selection-end-line="64" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/tinyG.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/OutputFixForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="50" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/Cycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/GraphUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/DirectedDfs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/SymbolGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/DataProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java1.8/jre/lib/ext/algs4.jar!/edu/princeton/cs/algs4/Stack.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="23" column="5" lean-forward="true" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="58" column="41" lean-forward="true" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#1464#1465#0" expanded="true" />
-            <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#2140#2141#0" expanded="true" />
-            <element signature="e#2184#2185#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2271#2272#0" expanded="true" />
-            <element signature="e#2303#2304#0" expanded="true" />
-            <element signature="e#2368#2369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/DepthFirstSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/DiGraphCycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1676">
-          <caret line="3" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphTheory/DiGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1183,10 +1683,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>match</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1255,7 +1757,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala-sdk-2.11.8</last-edited>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

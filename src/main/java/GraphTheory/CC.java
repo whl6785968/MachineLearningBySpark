@@ -1,15 +1,18 @@
 package GraphTheory;
 
+
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeSet;
 
 public class CC {
     private boolean[] marked;
     private int[] id;
     private int count;
 
-    public CC(Graph g){
+    public CC(DiGraph g){
         marked = new boolean[g.V()];
         id = new int[g.V()];
         for(int s=0;s<g.V();s++){
@@ -20,7 +23,7 @@ public class CC {
         }
     }
 
-    public void dfs(Graph g,int v){
+    public void dfs(DiGraph g,int v){
         marked[v] = true;
         id[v] = count;
         for(int w:g.adj(v)){
@@ -38,10 +41,29 @@ public class CC {
         return id[v];
     }
 
+    public List<Integer>[] components(DiGraph g){
+
+        ArrayList<Integer>[] res = new ArrayList[count];
+        for(int i = 0; i < count; i ++)
+            res[i] = new ArrayList<>();
+
+        for(int v = 0; v < g.V(); v++)
+            res[id[v]].add(v);
+        return res;
+    }
+
     public static void main(String[] args) throws IOException {
-        Graph graph = GraphUtils.getGraph();
-        CC cc = new CC(graph);
-        boolean connected = cc.connected(0, 6);
+        String filename = "D:\\huaweichussai\\test_data1.txt";
+        Map<String, Object> map = GraphUtils.getDiGraphData(filename);
+        int E = (int) map.get("E");
+        int V = (int) map.get("V")+1;
+        List<int[]> data = (List<int[]>) map.get("data");
+
+        DiGraph diGraph = new DiGraph(V, E, data);
+        CC cc = new CC(diGraph);
+        boolean connected = cc.connected(6001, 6005);
         System.out.println(connected);
+
+        System.out.println(cc.count);
     }
 }

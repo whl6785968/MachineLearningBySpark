@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class GraphUtils {
     public static Graph getGraph() throws IOException {
-        String filename = "F:\\test\\spark-test\\src\\main\\java\\GraphTheory\\tinyG.txt";
+        String filename = "D:\\huaweichussai\\test_data_i.txt";
         DataProcessor dataProcessor = new DataProcessor(filename);
         Map<String, Object> map = dataProcessor.loadData();
         int E = (int) map.get("E");
@@ -17,7 +17,7 @@ public class GraphUtils {
     }
 
     public static DiGraph getDiGraph() throws IOException {
-        String filename = "F:\\test\\spark-test\\src\\main\\java\\GraphTheory\\tinyG.txt";
+        String filename = "F:\\test\\spark-test\\src\\main\\java\\GraphTheory\\tinyDG.txt";
         DataProcessor dataProcessor = new DataProcessor(filename);
         Map<String, Object> map = dataProcessor.loadData();
         int E = (int) map.get("E");
@@ -27,7 +27,7 @@ public class GraphUtils {
         return diGraph;
     }
 
-    public static Map<String, Object> getDiGraphData(String filename) throws IOException {
+    public final static Map<String, Object> getDiGraphData(String filename) throws IOException {
         DataProcessor dataProcessor = new DataProcessor(filename);
         Map<String, Object> map = dataProcessor.load_huawei_data(filename);
 
